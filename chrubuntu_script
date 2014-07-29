@@ -248,8 +248,8 @@ add-apt-repository universe
 add-apt-repository restricted
 add-apt-repository multiverse 
 apt-get update
-apt-get -y install $ubuntu_metapackage
-$cr_install
+apt-get -y install --no-install-recommends $ubuntu_metapackage
+#$cr_install
 apt-get -y install linux-generic
 apt-get -y install grub-pc
 grub-mkconfig -o /boot/grub/grub.cfg
