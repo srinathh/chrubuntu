@@ -231,10 +231,11 @@ cp /etc/resolv.conf /tmp/urfs/etc/
 echo chrubuntu > /tmp/urfs/etc/hostname
 echo -e "\n127.0.1.1       chrubuntu" >> /tmp/urfs/etc/hosts
 
-cr_install="wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-add-apt-repository \"deb http://dl.google.com/linux/chrome/deb/ stable main\"
-apt-get update
-apt-get -y install google-chrome-stable"
+#disabling chrome install
+#cr_install="wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#add-apt-repository \"deb http://dl.google.com/linux/chrome/deb/ stable main\"
+#apt-get update
+#apt-get -y install google-chrome-stable"
 
 echo -e "export DEBIAN_FRONTEND=noninteractive
 apt-get -y update
