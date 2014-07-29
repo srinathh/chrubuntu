@@ -249,6 +249,11 @@ add-apt-repository restricted
 add-apt-repository multiverse 
 apt-get update
 apt-get -y install --no-install-recommends $ubuntu_metapackage
+#recommended packages to install from ubuntu-desktop
+apt-get -y install acpi-support
+apt-get -y install bluez
+apt-get -y install bluez-alsa
+
 #$cr_install
 apt-get -y install linux-generic
 apt-get -y install grub-pc
