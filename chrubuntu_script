@@ -35,7 +35,7 @@ echo -e '\e[0m'
 target_disk=""
 ubuntu_arch="amd64"
 ubuntu_metapackage="ubuntu-desktop"
-ubuntu_version="latest"
+ubuntu_version="lts"
 while getopts "hm:a:t:u:" OPTION
 do
      case $OPTION in
