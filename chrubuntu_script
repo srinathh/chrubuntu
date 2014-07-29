@@ -250,29 +250,36 @@ add-apt-repository multiverse
 apt-get update
 apt-get -y install --no-install-recommends $ubuntu_metapackage
 #recommended packages to install from ubuntu-desktop
-apt-get -y install acpi-support
-apt-get -y install cheese
-apt-get -y install fonts-liberation
+#core
 apt-get -y install gcc
-apt-get -y install gnome-disk-utility
-apt-get -y install gnome-terminal
-apt-get -y install gvfs-fuse
-apt-get -y install libgail-common
-apt-get -y install libpam-gnome-keyring
+apt-get -y install make
+apt-get -y install acpi-support
+
+#network
 apt-get -y install libproxy1-plugin-gsettings
 apt-get -y install libproxy1-plugin-networkmanager
-apt-get -y install make
-apt-get -y install mousetweaks
 apt-get -y install network-manager-gnome
 apt-get -y install network-manager-pptp
 apt-get -y install network-manager-pptp-gnome
+
+
+#libraries
+apt-get -y install gvfs-fuse
+
+#useful apps
+apt-get -y install ttf-ubuntu-font-family
+apt-get -y install cheese
+apt-get -y install fonts-liberation
+apt-get -y install gnome-disk-utility
+apt-get -y install gnome-terminal
+apt-get -y install libgail-common
+apt-get -y install libpam-gnome-keyring
+apt-get -y install mousetweaks
 apt-get -y install overlay-scrollbar
 apt-get -y install plymouth-theme-ubuntu-logo
 apt-get -y install policykit-desktop-privileges
 apt-get -y install pulseaudio-module-x11
 apt-get -y install totem
-apt-get -y install ttf-ubuntu-font-family
-apt-get -y install xcursor-themes
 
 #$cr_install
 apt-get -y install linux-generic
@@ -284,7 +291,7 @@ wget http://goo.gl/kz917j
 bash kz917j \$mykern
 rm kz917j
 useradd -m srinath -s /bin/bash
-echo srinath | echo srinath:user | chpasswd
+echo srinath | echo srinath:password | chpasswd
 adduser srinath adm
 adduser srinath sudo
 if [ -f /usr/lib/lightdm/lightdm-set-defaults ]
@@ -321,7 +328,7 @@ Installation is complete! On reboot at the dev mode screen, you can press
 CTRL+L to boot ChrUbuntu or CTRL+D to boot Chrome OS. The ChrUbuntu login is:
 
 Username:  srinath
-Password:  user
+Password:  password
 
 We're now ready to start ChrUbuntu!
 "
