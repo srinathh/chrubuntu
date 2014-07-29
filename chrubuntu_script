@@ -253,6 +253,31 @@ apt-get -y install --no-install-recommends $ubuntu_metapackage
 apt-get -y install acpi-support
 apt-get -y install bluez
 apt-get -y install bluez-alsa
+apt-get -y install cheese
+apt-get -y install fonts-liberation
+apt-get -y install gcc
+apt-get -y install gnome-bluetooth
+apt-get -y install gnome-disk-utility
+apt-get -y install gnome-terminal
+apt-get -y install gvfs-fuse
+apt-get -y install libgail-common
+apt-get -y install libpam-gnome-keyring
+apt-get -y install libproxy1-plugin-gsettings
+apt-get -y install libproxy1-plugin-networkmanager
+apt-get -y install make
+apt-get -y install mousetweaks
+apt-get -y install nautilus-share
+apt-get -y install network-manager-gnome
+apt-get -y install network-manager-pptp
+apt-get -y install network-manager-pptp-gnome
+apt-get -y install overlay-scrollbar
+apt-get -y install plymouth-theme-ubuntu-logo
+apt-get -y install policykit-desktop-privileges
+apt-get -y install pulseaudio-module-bluetooth
+apt-get -y install pulseaudio-module-x11
+apt-get -y install totem
+apt-get -y install ttf-ubuntu-font-family
+
 
 #$cr_install
 apt-get -y install linux-generic
