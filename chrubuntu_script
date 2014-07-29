@@ -294,7 +294,7 @@ echo -e "
 Installation is complete! On reboot at the dev mode screen, you can press
 CTRL+L to boot ChrUbuntu or CTRL+D to boot Chrome OS. The ChrUbuntu login is:
 
-Username:  user
+Username:  srinath
 Password:  user
 
 We're now ready to start ChrUbuntu!
