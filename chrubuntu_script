@@ -251,12 +251,9 @@ apt-get update
 apt-get -y install --no-install-recommends $ubuntu_metapackage
 #recommended packages to install from ubuntu-desktop
 apt-get -y install acpi-support
-apt-get -y install bluez
-apt-get -y install bluez-alsa
 apt-get -y install cheese
 apt-get -y install fonts-liberation
 apt-get -y install gcc
-apt-get -y install gnome-bluetooth
 apt-get -y install gnome-disk-utility
 apt-get -y install gnome-terminal
 apt-get -y install gvfs-fuse
@@ -266,18 +263,16 @@ apt-get -y install libproxy1-plugin-gsettings
 apt-get -y install libproxy1-plugin-networkmanager
 apt-get -y install make
 apt-get -y install mousetweaks
-apt-get -y install nautilus-share
 apt-get -y install network-manager-gnome
 apt-get -y install network-manager-pptp
 apt-get -y install network-manager-pptp-gnome
 apt-get -y install overlay-scrollbar
 apt-get -y install plymouth-theme-ubuntu-logo
 apt-get -y install policykit-desktop-privileges
-apt-get -y install pulseaudio-module-bluetooth
 apt-get -y install pulseaudio-module-x11
 apt-get -y install totem
 apt-get -y install ttf-ubuntu-font-family
-
+apt-get -y install xcursor-themes
 
 #$cr_install
 apt-get -y install linux-generic
@@ -288,13 +283,13 @@ mykern=\`ls /boot/vmlinuz-* | grep -oP \"[0-9].*\" | sort -rV | head -1\`
 wget http://goo.gl/kz917j
 bash kz917j \$mykern
 rm kz917j
-useradd -m user -s /bin/bash
-echo user | echo user:user | chpasswd
-adduser user adm
-adduser user sudo
+useradd -m srinath -s /bin/bash
+echo srinath | echo srinath:user | chpasswd
+adduser srinath adm
+adduser srinath sudo
 if [ -f /usr/lib/lightdm/lightdm-set-defaults ]
 then
-  /usr/lib/lightdm/lightdm-set-defaults --autologin user
+  /usr/lib/lightdm/lightdm-set-defaults --autologin srinath
 fi" > /tmp/urfs/install-ubuntu.sh
 
 chmod a+x /tmp/urfs/install-ubuntu.sh
